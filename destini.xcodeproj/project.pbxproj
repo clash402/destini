@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		1C06B8C626360D1D00584B7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C06B8C526360D1D00584B7A /* AppDelegate.swift */; };
 		1C06B8C826360D1D00584B7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C06B8C726360D1D00584B7A /* SceneDelegate.swift */; };
-		1C06B8CA26360D1D00584B7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C06B8C926360D1D00584B7A /* ViewController.swift */; };
+		1C06B8CA26360D1D00584B7A /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C06B8C926360D1D00584B7A /* MainVC.swift */; };
 		1C06B8CD26360D1D00584B7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C06B8CB26360D1D00584B7A /* Main.storyboard */; };
 		1C06B8CF26360D2400584B7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C06B8CE26360D2400584B7A /* Assets.xcassets */; };
 		1C06B8D226360D2400584B7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C06B8D026360D2400584B7A /* LaunchScreen.storyboard */; };
+		1C4C3AAE26370D7F001E6973 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4C3AAD26370D7E001E6973 /* Scene.swift */; };
+		1C4C3AB22637162D001E6973 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4C3AB12637162D001E6973 /* Story.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1C06B8C226360D1D00584B7A /* destini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = destini.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C06B8C526360D1D00584B7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C06B8C726360D1D00584B7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1C06B8C926360D1D00584B7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1C06B8C926360D1D00584B7A /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		1C06B8CC26360D1D00584B7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1C06B8CE26360D2400584B7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C06B8D126360D2400584B7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C06B8D326360D2400584B7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C4C3AAD26370D7E001E6973 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		1C4C3AB12637162D001E6973 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		1C06B8C426360D1D00584B7A /* destini */ = {
 			isa = PBXGroup;
 			children = (
-				1C06B8C526360D1D00584B7A /* AppDelegate.swift */,
-				1C06B8C726360D1D00584B7A /* SceneDelegate.swift */,
-				1C06B8C926360D1D00584B7A /* ViewController.swift */,
-				1C06B8CB26360D1D00584B7A /* Main.storyboard */,
+				1C06B8E126360D7E00584B7A /* Models */,
+				1C06B8DF26360D5D00584B7A /* Views */,
+				1C06B8DC26360D4F00584B7A /* Controllers */,
+				1C06B8DA26360D4800584B7A /* Other */,
 				1C06B8CE26360D2400584B7A /* Assets.xcassets */,
-				1C06B8D026360D2400584B7A /* LaunchScreen.storyboard */,
 				1C06B8D326360D2400584B7A /* Info.plist */,
 			);
 			path = destini;
+			sourceTree = "<group>";
+		};
+		1C06B8DA26360D4800584B7A /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				1C06B8C526360D1D00584B7A /* AppDelegate.swift */,
+				1C06B8C726360D1D00584B7A /* SceneDelegate.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		1C06B8DC26360D4F00584B7A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1C06B8C926360D1D00584B7A /* MainVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1C06B8DF26360D5D00584B7A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1C06B8D026360D2400584B7A /* LaunchScreen.storyboard */,
+				1C06B8CB26360D1D00584B7A /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1C06B8E126360D7E00584B7A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1C4C3AAD26370D7E001E6973 /* Scene.swift */,
+				1C4C3AB12637162D001E6973 /* Story.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +175,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C06B8CA26360D1D00584B7A /* ViewController.swift in Sources */,
+				1C06B8CA26360D1D00584B7A /* MainVC.swift in Sources */,
 				1C06B8C626360D1D00584B7A /* AppDelegate.swift in Sources */,
 				1C06B8C826360D1D00584B7A /* SceneDelegate.swift in Sources */,
+				1C4C3AAE26370D7F001E6973 /* Scene.swift in Sources */,
+				1C4C3AB22637162D001E6973 /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +329,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9YBQ5S77GM;
 				INFOPLIST_FILE = destini/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +349,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9YBQ5S77GM;
 				INFOPLIST_FILE = destini/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
